@@ -1,4 +1,23 @@
-# BirthdayTrail
+BirthdayTrail
+======
+
+## Built with:
+
+### Frontend
++ Vue
++ Vue-router
++ Vuex
+
+## Progressive
++ Installable - _manifest.json_
++ Cache API
++ Notification API
+
+### Style
++ SCSS pre-processor
++ BEM naming methodology
++ Optimised CSS animations
+
 
 
 

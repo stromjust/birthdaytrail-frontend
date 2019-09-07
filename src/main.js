@@ -4,8 +4,6 @@ import VueRouter from 'vue-router'
 import { routes } from './routes.js'
 import { store } from './store/store.js'
 
-// add Fetch / Promise polyfill
-
 Vue.use(VueRouter);
 
 const router = new VueRouter({

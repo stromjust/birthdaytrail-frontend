@@ -1,27 +1,26 @@
-BirthdayTrail
-======
+# BirthdayTrail - Plan and Manage Birthdays!
 
-## Built with:
+BirthdayTrail is a mobile progressive web SPA
 
-### Frontend
+### Built with:
+
+#### Frontend
 + Vue
 + Vue-router
 + Vuex
 
-## Progressive
+#### Progressive
 + Installable - _manifest.json_
 + Cache API
 + Notification API
 
-### Style
+#### Style
 + SCSS pre-processor
 + BEM naming methodology
 + Optimised CSS animations
 
-
-
-
-## Build Setup
+***
+### Build Setup
 
 ``` bash
 # install dependencies

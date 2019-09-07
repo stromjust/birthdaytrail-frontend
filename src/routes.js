@@ -7,10 +7,10 @@ import OfflineDefault from './components/offline/OfflineDefault.vue'
 
 
 export const routes = [
-		{ path: '/', component: Home },
-		{ path: '/login', component: Login, name: 'login'},
-		{ path: '/signup', component: Signup, name: 'signup'},
-		{ path: '/addbirthday', component: BirthdayAdd, name: 'addbirthday'},
-		{ path: '/birthday/:id', component: BirthdayDetails, name: 'birthdayDetails'},
-		{ path: '/offline', component: OfflineDefault, name: 'offline' }
+    { path: '/', component: Home },
+    { path: '/login', component: Login, name: 'login'},
+    { path: '/signup', component: Signup, name: 'signup'},
+    { path: '/addbirthday', component: BirthdayAdd, name: 'addbirthday'},
+    { path: '/birthday/:id', component: BirthdayDetails, name: 'birthdayDetails'},
+    { path: '/offline', component: OfflineDefault, name: 'offline' }
 ];

@@ -18,7 +18,7 @@
 					<router-link to="/login" tag='li' @click.native="hideMenu">change user</router-link>
 					<router-link to="/" tag='li' @click.native="logOut">logout</router-link>
 					<router-link to="/addbirthday" tag='li' @click.native="hideMenu">add birthday</router-link>
-					<li @click="promptNotifications">notifications</li>
+					<li v-if="showNotificationButton" @click="promptNotifications">notifications</li>
 				</span>
 			</ul>
 		</div>
@@ -37,7 +37,11 @@
 		computed: {
 			clickedElement() {
 				return this.$store.state.clickedElement;
-			}
+			},
+			showNotificationButton() {
+				if(Notification && Notification.permission === 'default') return true;
+				else false;
+			},
 		},
 		watch: {
 			clickedElement(el) {
@@ -76,8 +80,7 @@
 							})
 							.then(subscription => {
 								if(!subscription) {
-									console.log('No subscription - subscribing..');
-									const vapidPK = 'BD04DSiATJCOJVyvhqrx3ym1cB0G3sUeXMGWtEoX6-SJvON-_Xdlfj_F2ImP4hHS5ySCGpUja4u44f8OcatO-gw';
+									const vapidPK = 'BLHWNB-PfP_Md94GpQ_d2Ek1-5AqUH4v-ISkbrZTNls1pxXUi1fyX7NMPR8KQeI-Hc3PUMY40AazLYTWjc0xWSA';
 									const vapidPKarray = urlBase64ToUint8Array(vapidPK);
 									return worker.pushManager.subscribe({
 										userVisibleOnly:  true,
